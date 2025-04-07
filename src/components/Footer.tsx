@@ -34,8 +34,8 @@ const Footer = () => {
           
           <div className="col-span-1 md:col-span-1">
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
-            <p className="text-gray-300 mb-2">support@leveluphub.com</p>
-            <p className="text-gray-300 mb-4">+91 9876543210</p>
+            <p className="text-gray-300 mb-2">leveluphubinfo@gmail.com</p>
+            <p className="text-gray-300 mb-4">+91 6369714934</p>
             <Link to="/contact" className="text-secondary hover:text-secondary/80 transition-colors">Get in Touch</Link>
           </div>
         </div>

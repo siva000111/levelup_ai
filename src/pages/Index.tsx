@@ -69,7 +69,7 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="hero-gradient text-white py-20 md:py-32">
+      <section className="logistics-hero-bg text-white py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -85,7 +85,7 @@ const Index = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-primary"
+                className="border-white bg-secondary/80 text-white hover:bg-white hover:text-primary"
                 onClick={() => setIsModalOpen(true)}
               >
                 Get Free Demo Lesson
@@ -231,7 +231,7 @@ const Index = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-secondary"
+              className="border-white bg-secondary/80 text-white hover:bg-white hover:text-secondary"
               onClick={() => setIsModalOpen(true)}
             >
               Get Free Demo

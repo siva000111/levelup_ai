@@ -26,15 +26,15 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#2A3F54',
+					DEFAULT: '#1A4D7C',  // Deeper blue for education/trust
 					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: '#2CB9B3',
+					DEFAULT: '#0FA0CE',  // Brighter blue for tech/innovation
 					foreground: '#FFFFFF'
 				},
 				accent: {
-					DEFAULT: '#FFD700',
+					DEFAULT: '#FFD24C',  // Warmer gold for achievements/certifications
 					foreground: '#000000'
 				},
 				destructive: {
