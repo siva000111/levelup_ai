@@ -1,9 +1,10 @@
+
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -194,6 +195,23 @@ const Contact = () => {
                           Tech Park, Sector 62<br />
                           Noida, Uttar Pradesh, India
                         </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start">
+                      <div className="bg-secondary/10 rounded-full p-3 mr-4">
+                        <Linkedin className="text-secondary" size={24} />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-gray-800 mb-1">Connect with Founder</h3>
+                        <a 
+                          href="https://www.linkedin.com/in/siva-kesavan/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-secondary hover:text-secondary/80 font-medium transition-colors"
+                        >
+                          Siva Kesavan - LinkedIn
+                        </a>
                       </div>
                     </div>
                   </div>
