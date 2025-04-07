@@ -117,40 +117,16 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="max-w-md mx-auto">
             <div className="bg-white p-6 rounded-lg shadow text-center">
-              <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+              <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
                 {/* Add team member image here if available */}
-                <div className="w-full h-full flex items-center justify-center text-2xl font-bold text-primary">RK</div>
+                <div className="w-full h-full flex items-center justify-center text-2xl font-bold text-primary">SK</div>
               </div>
-              <h3 className="text-xl font-bold text-primary mb-1">Ravi Kumar</h3>
+              <h3 className="text-xl font-bold text-primary mb-1">Siva Kesavan</h3>
               <p className="text-secondary font-medium mb-2">Founder & CEO</p>
               <p className="text-gray-600">
-                Former Head of Logistics at TechSupply Ltd with 15+ years of industry experience.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow text-center">
-              <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-                {/* Add team member image here if available */}
-                <div className="w-full h-full flex items-center justify-center text-2xl font-bold text-primary">SM</div>
-              </div>
-              <h3 className="text-xl font-bold text-primary mb-1">Sunita Mehta</h3>
-              <p className="text-secondary font-medium mb-2">Chief Learning Officer</p>
-              <p className="text-gray-600">
-                PhD in Supply Chain Management with expertise in AI applications for logistics.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow text-center">
-              <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
-                {/* Add team member image here if available */}
-                <div className="w-full h-full flex items-center justify-center text-2xl font-bold text-primary">AP</div>
-              </div>
-              <h3 className="text-xl font-bold text-primary mb-1">Amit Patel</h3>
-              <p className="text-secondary font-medium mb-2">Director of Technology</p>
-              <p className="text-gray-600">
-                Former CTO of EdTech startup with experience building learning platforms.
+                Passionate about transforming logistics education through innovative technology and microlearning.
               </p>
             </div>
           </div>
