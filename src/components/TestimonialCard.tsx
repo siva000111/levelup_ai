@@ -1,4 +1,6 @@
 
+import { Quote } from 'lucide-react';
+
 interface TestimonialCardProps {
   name: string;
   role: string;
@@ -9,21 +11,22 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ name, role, company, quote, image }: TestimonialCardProps) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 border border-gray-100">
-      <div className="flex items-center mb-4">
-        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white text-lg font-bold mr-4">
+    <div className="testimonial-card">
+      <Quote className="text-accent mb-4" size={32} />
+      <p className="text-gray-700 italic mb-6 leading-relaxed">"{quote}"</p>
+      <div className="flex items-center mt-auto">
+        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-white font-bold relative overflow-hidden mr-4 border-2 border-primary/20">
           {image ? (
-            <img src={image} alt={name} className="w-full h-full rounded-full object-cover" />
+            <img src={image} alt={name} className="w-full h-full object-cover" />
           ) : (
             name.charAt(0)
           )}
         </div>
         <div>
-          <h4 className="font-bold text-gray-800">{name}</h4>
-          <p className="text-gray-600 text-sm">{role}, {company}</p>
+          <h4 className="font-bold text-primary">{name}</h4>
+          <p className="text-secondary text-sm">{role}, {company}</p>
         </div>
       </div>
-      <p className="text-gray-700 italic">"{quote}"</p>
     </div>
   );
 };

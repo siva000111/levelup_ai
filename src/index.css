@@ -14,16 +14,18 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Richer, more premium color palette */
+    --primary: 220 48% 30%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 200 75% 35%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    /* Gold accent for premium feel */
+    --accent: 42 87% 55%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -64,8 +66,8 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 42 87% 55%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
@@ -107,12 +109,87 @@
   }
 }
 
+/* Premium background gradients */
 .hero-gradient {
-  background: linear-gradient(90deg, rgba(42, 63, 84, 0.9) 0%, rgba(44, 185, 179, 0.8) 100%);
+  background: linear-gradient(90deg, rgba(26, 77, 124, 0.95) 0%, rgba(15, 160, 206, 0.9) 100%);
 }
 
 .logistics-hero-bg {
-  background-image: linear-gradient(rgba(42, 63, 84, 0.8), rgba(44, 185, 179, 0.7)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
+  background-image: linear-gradient(rgba(26, 77, 124, 0.85), rgba(15, 160, 206, 0.75)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
   background-size: cover;
   background-position: center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Premium UI elements */
+.premium-card {
+  @apply bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300;
+}
+
+.premium-button {
+  @apply rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1;
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, #1A4D7C 0%, #0FA0CE 100%);
+}
+
+.premium-gradient-light {
+  background: linear-gradient(135deg, #f6f9fc 0%, #eef4f7 100%);
+}
+
+.premium-text-gradient {
+  @apply bg-clip-text text-transparent;
+  background-image: linear-gradient(135deg, #1A4D7C 0%, #0FA0CE 100%);
+}
+
+.premium-accent {
+  background: linear-gradient(135deg, #FFD24C 0%, #F3C13A 100%);
+}
+
+/* Enhanced animations */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.5s ease-out forwards;
+}
+
+.animate-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+}
+
+/* Enhancing component styles */
+.testimonial-card {
+  @apply premium-card p-8 relative overflow-hidden;
+}
+
+.testimonial-card::before {
+  content: '"';
+  @apply absolute text-8xl opacity-10 -top-4 -left-2 text-primary font-serif;
+}
+
+/* Card effects */
+.glassmorphism {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }

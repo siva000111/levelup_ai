@@ -26,15 +26,15 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#1A4D7C',  // Deeper blue for education/trust
+					DEFAULT: '#103A63',  // Richer, deeper blue for premium feel
 					foreground: '#FFFFFF'
 				},
 				secondary: {
-					DEFAULT: '#0FA0CE',  // Brighter blue for tech/innovation
+					DEFAULT: '#0A85AE',  // Refined blue for tech/innovation
 					foreground: '#FFFFFF'
 				},
 				accent: {
-					DEFAULT: '#FFD24C',  // Warmer gold for achievements/certifications
+					DEFAULT: '#F3C13A',  // Rich gold for premium accents
 					foreground: '#000000'
 				},
 				destructive: {
@@ -73,6 +73,10 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			boxShadow: {
+				'premium': '0px 10px 30px -5px rgba(0, 0, 0, 0.1)',
+				'premium-hover': '0px 20px 40px -5px rgba(0, 0, 0, 0.15)',
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },
@@ -85,12 +89,22 @@ export default {
 				'fade-in': {
 					'0%': { opacity: '0', transform: 'translateY(10px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'subtle-bounce': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-5px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.5s ease-out'
+				'fade-in': 'fade-in 0.5s ease-out',
+				'subtle-bounce': 'subtle-bounce 2s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-premium': 'linear-gradient(135deg, #1A4D7C 0%, #0FA0CE 100%)',
+				'gradient-premium-light': 'linear-gradient(135deg, #f6f9fc 0%, #eef4f7 100%)',
+				'gradient-gold': 'linear-gradient(135deg, #FFD24C 0%, #F3C13A 100%)',
 			}
 		}
 	},
