@@ -125,15 +125,16 @@
     @apply leading-relaxed text-base;
   }
 
-  .font-light {
+  /* Font utility classes - fixed to avoid circular references */
+  .text-light {
     @apply font-inter font-light;
   }
   
-  .font-normal {
+  .text-normal {
     @apply font-inter font-normal;
   }
   
-  .font-medium {
+  .text-medium {
     @apply font-inter font-medium;
   }
 }
