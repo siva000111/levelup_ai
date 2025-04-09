@@ -65,8 +65,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				poppins: ['Poppins', 'sans-serif'],
-				opensans: ['Open Sans', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
+				inter: ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
