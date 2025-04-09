@@ -37,7 +37,7 @@ const Navbar = () => {
     )}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
-          <span className="text-primary text-2xl font-bold">LevelUp Hub</span>
+          <span className="font-montserrat text-primary text-2xl font-bold tracking-tight">LevelUp Hub</span>
         </Link>
 
         {/* Desktop Navigation */}
